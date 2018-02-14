@@ -1,0 +1,17 @@
+Description: PHP7.2 warns when count() is called on non-Countable
+ As described on http://php.net/manual/en/migration72.incompatible.php
+Author: Nishanth Aravamudan <nish.aravamudan@canonical.com>
+Forwarded: Will be done by Nishanth Aravamudan
+Last-Update: 2018-02-14
+
+--- php-pear-1.10.5+submodules+notgz.orig/PEAR/RunTest.php
++++ php-pear-1.10.5+submodules+notgz/PEAR/RunTest.php
+@@ -343,7 +343,7 @@ class PEAR_RunTest
+ 
+         // Check if test should be skipped.
+         $res  = $this->_runSkipIf($section_text, $temp_skipif, $tested, $ini_settings);
+-        if (count($res) != 2) {
++        if (!is_array($res) || count($res) != 2) {
+             return $res;
+         }
+         $info = $res['info'];
