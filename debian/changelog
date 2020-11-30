@@ -1,3 +1,13 @@
+php-pear (1:1.10.5+submodules+notgz-1ubuntu1.18.04.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: unserialization attack in Archive_Tar
+    - debian/patches/CVE-2020-2894x.patch: catch additional malicious or
+      crafted filenames in submodules/Archive_Tar/Archive/Tar.php.
+    - CVE-2020-28948
+    - CVE-2020-28949
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:02:42 -0500
+
 php-pear (1:1.10.5+submodules+notgz-1ubuntu1.18.04.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: unserialization vulnerability in Archive_Tar

@@ -2,3 +2,4 @@
 0002-Fix-PECL-extensions-FTBFS-with-PHP-Fatal-error-Call-.patch
 php72_count_of_notcountable.patch
 CVE-2018-1000888.patch
+CVE-2020-2894x.patch
