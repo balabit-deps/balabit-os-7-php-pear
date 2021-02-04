@@ -3,3 +3,6 @@
 php72_count_of_notcountable.patch
 CVE-2018-1000888.patch
 CVE-2020-2894x.patch
+CVE-2020-36193-1.patch
+CVE-2020-36193-2.patch
+CVE-2020-36193-3.patch
